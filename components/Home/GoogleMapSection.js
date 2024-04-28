@@ -110,9 +110,11 @@ function GoogleMapSection() {
           position={{lat:source.lat,lng:source.lng}}
           mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
           >
-            <div className='p-2 bg-white font-bold inline-block'>
-              <p className='text-black text-[18px]'>{source.label}</p>
-            </div>
+            {source.label && (
+  <div className='p-2 bg-white font-bold inline-block'>
+    <p className='text-black text-[18px]'>{source.label}</p>
+  </div>
+)}
           </OverlayViewF>
 
         </MarkerF>:null}
@@ -131,9 +133,12 @@ function GoogleMapSection() {
           position={{lat:destination.lat,lng:destination.lng}}
           mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
           >
-            <div className='p-2 bg-white font-bold inline-block'>
-              <p className='text-black text-[18px]'>{destination.label}</p>
-            </div>
+            {destination.label && (
+  <div className='p-2 bg-white font-bold inline-block'>
+    <p className='text-black text-[18px]'>{destination.label}</p>
+  </div>
+)}
+
           </OverlayViewF>
         </MarkerF>:null}
        
