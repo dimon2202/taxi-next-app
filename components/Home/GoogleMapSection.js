@@ -72,7 +72,6 @@ function GoogleMapSection() {
     },(result,status)=>{
         if(status===google.maps.DirectionsStatus.OK)
         {
-        
             setDirectionRoutePoints(result)
         }
         else{
@@ -96,7 +95,8 @@ function GoogleMapSection() {
                    zoomControl: false, 
                  }}
       >
-      {source.lenght!=[]?  <MarkerF 
+      {source.lenght!=[]?  
+      <MarkerF 
         position={{lat:source.lat,lng:source.lng}}
         icon={{
           url:"/source.png",
