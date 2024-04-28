@@ -23,14 +23,12 @@ function SearchSection() {
     <div>
 
    
-    <div className='p-2 md:p-6 
-    border-[2px] rounded-xl'>
-        <p className='text-[20px] font-bold' >Get a ride</p>
+    <div className='p-2 border-[0px] md:p-6 md:border-[2px] rounded-xl w-full md:w-auto'>
+        <p className='hidden text-[20px] font-bold md:block'>Get a ride</p>
         <InputItem type='source' />
         <InputItem type="destination" />
 
-        <button className=' p-4 bg-black w-full mt-5 
-        text-white rounded-lg'
+        <button className='p-4 bg-black w-full mt-5 text-white rounded-lg'
         onClick={()=>calculateDistance()}
         >Search</button>
     </div>

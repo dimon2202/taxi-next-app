@@ -23,10 +23,9 @@ export default function Home() {
       <LoadScript 
       libraries={['places']}
       googleMapsApiKey={"AIzaSyAlIDUiTW6M9p6qb7mHsMCvqk0_OMO3MV0"}>
-      <div className='p-6 grid grid-cols-1 md:grid-cols-3 gap-5'>
-        <div>
+      <div className='p-0 grid grid-cols-1 md:grid-cols-3 gap-5 md:p-6'>
+        <div className='absolute w-full z-10 md:relative md:z-auto z-10'>
             <SearchSection/>
-            
         </div>
         <div className='col-span-2'>
             <GoogleMapSection/>

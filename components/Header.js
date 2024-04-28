@@ -19,8 +19,8 @@ function Header() {
         }
     ]
   return (
-    <div className='p-5 pb-3 pl-10 border-b-[4px] 
-    border-gray-200 flex items-center justify-between'>
+    <div className=' hidden p-5 pb-3 pl-10 border-b-[4px] 
+    border-gray-200 flex items-center justify-between md:flex'>
         <div className='flex gap-24 items-center'>
             <Image src='/logo.png'
             width={70} height={70}

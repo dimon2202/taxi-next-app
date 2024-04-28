@@ -6,7 +6,7 @@ function GoogleMapSection() {
   const containerStyle = {
     width: '100%',
     // height: window.innerWidth*0.43
-    height: '82vh'
+    height: window.innerWidth < 768 ? '100vh' : '82vh'
   };
   
 
@@ -87,7 +87,14 @@ function GoogleMapSection() {
         center={center}
         zoom={11}
         onLoad={map=>setMap(map)}
-        options={{mapId:'4113717585f11867'}}
+        // options={{mapId:'4113717585f11867'}}
+        options={{
+                  mapId:'3a24aa501ec4de40',
+                   fullscreenControl: false, 
+                   mapTypeControl: false, 
+                  streetViewControl: false, 
+                   zoomControl: false, 
+                 }}
       >
       {source.lenght!=[]?  <MarkerF 
         position={{lat:source.lat,lng:source.lng}}

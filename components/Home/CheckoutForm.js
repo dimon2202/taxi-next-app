@@ -31,7 +31,7 @@ function CheckoutForm({amount}) {
           clientSecret:secretKey,
           elements,
           confirmParams:{
-            return_url:"http://localhost:3000/payment-confirm"
+            return_url:"https://taxi-next-app-jet.vercel.app//payment-confirm"
           }  
         })
     }
